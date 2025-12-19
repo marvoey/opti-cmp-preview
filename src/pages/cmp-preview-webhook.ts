@@ -7,12 +7,40 @@ if (!CMP_API_BASE_URL) {
   throw new Error("CMP_API_BASE_URL is not defined in .env file.");
 }
 
-export const POST: APIRoute = ({ request }) => {
+export const POST: APIRoute = async ({ request }) => {
   console.log("Received CMP preview webhook request.");
-  console.log("Request Body:", request.body);
-  return new Response(
-    JSON.stringify({
-      message: "This was a POST!",
-    })
-  );
+
+  try {
+    const body = await request.json();
+    console.log("Request Body:", body);
+
+    // TODO: Process the webhook data here
+    // You can now use CMP_API_BASE_URL to make API calls if needed
+
+    return new Response(
+      JSON.stringify({
+        message: "Webhook received successfully",
+        received: true
+      }),
+      {
+        status: 200,
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }
+    );
+  } catch (error) {
+    console.error("Error processing webhook:", error);
+    return new Response(
+      JSON.stringify({
+        error: "Failed to process webhook"
+      }),
+      {
+        status: 400,
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }
+    );
+  }
 };
