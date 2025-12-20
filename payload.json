@@ -1,0 +1,348 @@
+{
+  "event_name": "content_preview_requested",
+  "data": {
+    "assets": {
+      "articles": [],
+      "images": [],
+      "videos": [],
+      "raw_files": [],
+      "structured_contents": [
+        {
+          "id": "9fea8dbf0eaa4a0db31ef9b457062dcb",
+          "version_id": "a91488335a574ebd94c7be491f53c5a0",
+          "title": "This is interesting to test preview",
+          "created_at": "2025-12-12T18:24:35",
+          "modified_at": "2025-12-12T18:24:47",
+          "content_body": {
+            "root_content": true,
+            "title": "This is interesting to test preview",
+            "primary_locale": "en",
+            "expired": false,
+            "expiry_datetime": null,
+            "source": null,
+            "source_id": null,
+            "source_metadata": null,
+            "content_guid": "9fea8dbf0eaa4a0db31ef9b457062dcb",
+            "created_by": "68c88071bb6b052a11face62",
+            "updated_by": "68c88071bb6b052a11face62",
+            "created_at": "2025-12-12T18:24:35",
+            "updated_at": "2025-12-12T18:24:47",
+            "content_type_guid": "39e120e81df942348f121f844aef6c65",
+            "content_type_name": "Saas CMS Content",
+            "content_type": {
+              "name": "Saas CMS Content",
+              "description": "",
+              "api_identifier": "saas_cms_content",
+              "thumbnail_guid": null,
+              "component": false,
+              "disabled": false,
+              "default_locale": "en",
+              "latest_version_sequence": null,
+              "content_type_guid": "39e120e81df942348f121f844aef6c65",
+              "created_by": "68c88071bb6b052a11face62",
+              "updated_by": "68c88071bb6b052a11face62",
+              "created_at": "2025-12-12T17:29:56",
+              "updated_at": "2025-12-12T17:31:07",
+              "source": null,
+              "source_id": null,
+              "source_metadata": null,
+              "links": {
+                "self": "https://api.welcomesoftware.com/v3/structured-content/content-types/39e120e81df942348f121f844aef6c65",
+                "versions": "https://api.welcomesoftware.com/v3/structured-content/content-types/39e120e81df942348f121f844aef6c65/versions"
+              },
+              "version": {
+                "version_guid": "c2c10a11ec9945e5870d9823d8f085ae",
+                "created_by": "68c88071bb6b052a11face62",
+                "created_at": "2025-12-12T17:29:56",
+                "latest": true,
+                "version_sequence": 1,
+                "expected_locales": ["en_US"],
+                "links": {
+                  "content_type": "https://api.welcomesoftware.com/v3/structured-content/content-types/39e120e81df942348f121f844aef6c65",
+                  "self": "https://api.welcomesoftware.com/v3/structured-content/content-types/39e120e81df942348f121f844aef6c65/versions/c2c10a11ec9945e5870d9823d8f085ae"
+                },
+                "field_definitions": [
+                  {
+                    "core": {
+                      "key": "webpage",
+                      "name": "Webpage Analytics",
+                      "is_list": false,
+                      "is_required": false,
+                      "need_internationalization": false,
+                      "min_list_length": 0,
+                      "max_list_length": -1,
+                      "field_type": "content-type",
+                      "source_id": null,
+                      "source_metadata": null,
+                      "order_index": 0,
+                      "help_text": null,
+                      "editor_metadata": null
+                    },
+                    "allowed_content_types": [
+                      "5ed85a4bb9464238b8f892baed7de453"
+                    ],
+                    "ref_type": 3,
+                    "allow_ref_edit": true,
+                    "content_type_links": {
+                      "5ed85a4bb9464238b8f892baed7de453": {
+                        "name": "Webpage Analytics",
+                        "url": "/v0/instance/68f14361eed1bced7af06985/content-type/5ed85a4bb9464238b8f892baed7de453"
+                      }
+                    },
+                    "default_value": null
+                  },
+                  {
+                    "core": {
+                      "key": "heading",
+                      "name": "Heading",
+                      "is_list": false,
+                      "is_required": false,
+                      "need_internationalization": false,
+                      "min_list_length": 1,
+                      "max_list_length": -1,
+                      "field_type": "text-field",
+                      "source_id": null,
+                      "source_metadata": null,
+                      "order_index": 1,
+                      "help_text": null,
+                      "editor_metadata": null
+                    },
+                    "validation_pattern": ".*",
+                    "min_length": 0,
+                    "max_length": -1,
+                    "default_values": null
+                  },
+                  {
+                    "core": {
+                      "key": "subHeading",
+                      "name": "SubHeading",
+                      "is_list": false,
+                      "is_required": false,
+                      "need_internationalization": false,
+                      "min_list_length": 1,
+                      "max_list_length": -1,
+                      "field_type": "text-field",
+                      "source_id": null,
+                      "source_metadata": null,
+                      "order_index": 2,
+                      "help_text": null,
+                      "editor_metadata": null
+                    },
+                    "validation_pattern": ".*",
+                    "min_length": 0,
+                    "max_length": -1,
+                    "default_values": null
+                  },
+                  {
+                    "core": {
+                      "key": "body",
+                      "name": "Body",
+                      "is_list": false,
+                      "is_required": false,
+                      "need_internationalization": false,
+                      "min_list_length": 1,
+                      "max_list_length": -1,
+                      "field_type": "rich-text",
+                      "source_id": null,
+                      "source_metadata": null,
+                      "order_index": 3,
+                      "help_text": null,
+                      "editor_metadata": null
+                    },
+                    "min_visual_text_length": 0,
+                    "max_visual_text_length": -1,
+                    "default_values": null
+                  },
+                  {
+                    "core": {
+                      "key": "featuredImage",
+                      "name": "Featured Image",
+                      "is_list": false,
+                      "is_required": false,
+                      "need_internationalization": false,
+                      "min_list_length": 1,
+                      "max_list_length": -1,
+                      "field_type": "library-asset",
+                      "source_id": null,
+                      "source_metadata": null,
+                      "order_index": 4,
+                      "help_text": null,
+                      "editor_metadata": null
+                    },
+                    "allowed_types": ["article", "image", "video", "raw_file"],
+                    "default_values": null
+                  }
+                ],
+                "content_type_version_hash": "8666a8d88e49970ff798ab7389d799f1ed15cfa565f5f63d00ca75cb69724e8ca74b0d6cfad761ac8c602c2386516deb"
+              }
+            },
+            "fields_version": {
+              "fields": {
+                "heading": [
+                  {
+                    "locale": "en",
+                    "field_values": [
+                      { "order_index": 0, "text_value": "article 2 Heading" }
+                    ]
+                  }
+                ],
+                "subHeading": [
+                  {
+                    "locale": "en",
+                    "field_values": [
+                      { "order_index": 0, "text_value": "Article 2 Subheading" }
+                    ]
+                  }
+                ],
+                "body": [
+                  {
+                    "locale": "en",
+                    "field_values": [
+                      {
+                        "order_index": 0,
+                        "rich_text_value": "<p>The amazing body</p>"
+                      }
+                    ]
+                  }
+                ],
+                "webpage": [
+                  {
+                    "locale": "en",
+                    "field_values": [
+                      {
+                        "order_index": null,
+                        "content_guid": "440bd19d94ff413792d8a2df5daf8ffb",
+                        "content_url": "/v3/structured-content/contents/440bd19d94ff413792d8a2df5daf8ffb",
+                        "embedded": true,
+                        "content_details": {
+                          "root_content": false,
+                          "title": "",
+                          "primary_locale": "en",
+                          "expired": false,
+                          "expiry_datetime": null,
+                          "source": null,
+                          "source_id": null,
+                          "source_metadata": null,
+                          "latest_fields_version": {
+                            "fields": {
+                              "wlc_pixel": [
+                                {
+                                  "locale": "en",
+                                  "field_values": [
+                                    {
+                                      "order_index": null,
+                                      "url": "https://pixel.welcomesoftware.com/px.gif?key=YXJ0aWNsZT05ZmVhOGRiZjBlYWE0YTBkYjMxZWY5YjQ1NzA2MmRjYg=="
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "created_by": "68c88071bb6b052a11face62",
+                            "source_id": null,
+                            "source_metadata": null,
+                            "created_at": "2025-12-12T18:24:36",
+                            "version_guid": "fe0f3eee524a47678b789b898f2cc65e",
+                            "content_type_version_guid": "e16bad1e5f77460e924449af98577bb0",
+                            "content_hash": "f7bedd5df6450670730089d730ba2b580a969a37583d27927535db5d822869a3ec289bef335f7f8996274c7ec1c65dea",
+                            "validation": { "fields": null }
+                          },
+                          "content_guid": "440bd19d94ff413792d8a2df5daf8ffb",
+                          "created_by": "68c88071bb6b052a11face62",
+                          "updated_by": "68c88071bb6b052a11face62",
+                          "created_at": "2025-12-12T18:24:35",
+                          "updated_at": "2025-12-12T18:24:35",
+                          "content_type_guid": "5ed85a4bb9464238b8f892baed7de453",
+                          "content_type_name": "Webpage Analytics",
+                          "content_type": {
+                            "name": "Webpage Analytics",
+                            "description": "",
+                            "api_identifier": "WebpageAnalytics",
+                            "thumbnail_guid": null,
+                            "component": true,
+                            "disabled": false,
+                            "default_locale": null,
+                            "latest_version_sequence": null,
+                            "content_type_guid": "5ed85a4bb9464238b8f892baed7de453",
+                            "created_by": "5d75b97d4886f379665340ad",
+                            "updated_by": "5d75b97d4886f379665340ad",
+                            "created_at": "2025-10-16T19:11:32",
+                            "updated_at": "2025-10-16T19:11:32",
+                            "source": "Welcome",
+                            "source_id": "webpage",
+                            "source_metadata": null,
+                            "links": {
+                              "self": "https://api.welcomesoftware.com/v3/structured-content/content-types/5ed85a4bb9464238b8f892baed7de453",
+                              "versions": "https://api.welcomesoftware.com/v3/structured-content/content-types/5ed85a4bb9464238b8f892baed7de453/versions"
+                            },
+                            "version": {
+                              "version_guid": "e16bad1e5f77460e924449af98577bb0",
+                              "created_by": "5d75b97d4886f379665340ad",
+                              "created_at": "2025-10-16T19:11:32",
+                              "latest": true,
+                              "version_sequence": 1,
+                              "expected_locales": ["en_US"],
+                              "links": {
+                                "content_type": "https://api.welcomesoftware.com/v3/structured-content/content-types/5ed85a4bb9464238b8f892baed7de453",
+                                "self": "https://api.welcomesoftware.com/v3/structured-content/content-types/5ed85a4bb9464238b8f892baed7de453/versions/e16bad1e5f77460e924449af98577bb0"
+                              },
+                              "field_definitions": [
+                                {
+                                  "core": {
+                                    "key": "wlc_pixel",
+                                    "name": "Pixel",
+                                    "is_list": false,
+                                    "is_required": false,
+                                    "need_internationalization": false,
+                                    "min_list_length": 0,
+                                    "max_list_length": -1,
+                                    "field_type": "url",
+                                    "source_id": null,
+                                    "source_metadata": null,
+                                    "order_index": null,
+                                    "help_text": null,
+                                    "editor_metadata": null
+                                  },
+                                  "base_type": "url",
+                                  "default_values": null
+                                }
+                              ],
+                              "content_type_version_hash": "df3223a62e8991ad6f7b74a82222f5c8e7f5fd90107a825e478635ea173809dc6ca41c24499fd758320c837da4e122dd"
+                            }
+                          },
+                          "links": {
+                            "self": "https://api.welcomesoftware.com/v3/structured-content/contents/440bd19d94ff413792d8a2df5daf8ffb",
+                            "definition": "https://api.welcomesoftware.com/v3/structured-content/content-types/5ed85a4bb9464238b8f892baed7de453/versions/e16bad1e5f77460e924449af98577bb0"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "created_by": "68c88071bb6b052a11face62",
+              "source_id": null,
+              "source_metadata": null,
+              "created_at": "2025-12-12T18:25:14",
+              "version_guid": "a91488335a574ebd94c7be491f53c5a0",
+              "content_type_version_guid": "c2c10a11ec9945e5870d9823d8f085ae",
+              "content_hash": "4b732b3d4620ec7d5afc82ac40720b1703a38fbe68480b699f0fb5a6673d77e01298b400b51dac6195bb740dca9317cf",
+              "validation": null
+            }
+          }
+        }
+      ]
+    },
+    "organization": { "id": "68f14361eed1bced7af06985" },
+    "preview_id": "cc894e29fe22450297fabc532829728c",
+    "task": {
+      "id": "693c5dd8252111dfd7a2c53c",
+      "links": {
+        "self": "https://api.welcomesoftware.com/v3/tasks/693c5dd8252111dfd7a2c53c"
+      }
+    },
+    "links": {
+      "acknowledge": "https://api.welcomesoftware.com/v3/structured-content/contents/9fea8dbf0eaa4a0db31ef9b457062dcb/versions/a91488335a574ebd94c7be491f53c5a0/previews/cc894e29fe22450297fabc532829728c/acknowledge",
+      "complete": "https://api.welcomesoftware.com/v3/structured-content/contents/9fea8dbf0eaa4a0db31ef9b457062dcb/versions/a91488335a574ebd94c7be491f53c5a0/previews/cc894e29fe22450297fabc532829728c/complete"
+    }
+  }
+}

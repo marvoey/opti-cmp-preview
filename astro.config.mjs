@@ -8,5 +8,13 @@ export default defineConfig({
     adapter: netlify(),
     security: {
         checkOrigin: false
+    },
+    vite: {
+        server: {
+            allowedHosts: [
+                'undeliberatively-unblindfolded-latrisha.ngrok-free.dev',
+                '.ngrok-free.dev' // Allow all ngrok-free.dev subdomains
+            ]
+        }
     }
 });
